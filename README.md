@@ -1,9 +1,9 @@
 Aria2 + AriaNg
 
-[English](https://github.com/wahyd4/aria2-ariang-docker/blob/master/README.EN.md) | 简体中文
+[English](https://github.com/huangzulin/aria2-ariang-docker-pi/blob/master/README.EN.md) | 简体中文
 
-[![](https://images.microbadger.com/badges/image/wahyd4/aria2-ui.svg)](https://microbadger.com/images/wahyd4/aria2-ui "Get your own image badge on microbadger.com")
-[![Docker Pulls](https://img.shields.io/docker/pulls/wahyd4/aria2-ui.svg)](https://hub.docker.com/r/wahyd4/aria2-ui/)
+[![](https://images.microbadger.com/badges/image/huangzulin/aria2-ui-pi.svg)](https://microbadger.com/images/huangzulin/aria2-ui-pi "Get your own image badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/huangzulin/aria2-ui-pi.svg)](https://hub.docker.com/r/huangzulin/aria2-ui-pi/)
 
 本镜像包含 Aria2、AriaNg 和File Manager，主要方便那些用户期望只运行一个镜像就能实现图形化下载文件和在线播放文件。（类似离线下载的功能），只使用一个 Docker 镜像也方便用户在群晖NAS 中运行本程序。
 
@@ -21,10 +21,10 @@ Aria2 + AriaNg
 
 <!-- /TOC -->
 Aria2
-![Screenshot](https://github.com/wahyd4/aria2-ariang-x-docker-compose/raw/master/images/ariang.png)
+![Screenshot](https://github.com/huangzulin/aria2-ariang-x-docker-compose/raw/master/images/ariang.png)
 
 File Manager
-![Filemanager](https://github.com/wahyd4/aria2-ariang-docker/raw/master/filemanager.png)
+![Filemanager](https://github.com/huangzulin/aria2-ariang-docker-pi/raw/master/filemanager.png)
 ## 功能特性
 
   * Aria2 (SSL 支持)
@@ -38,7 +38,7 @@ File Manager
 ### 快速运行
 
 ```shell
-  docker run -d --name aria2-ui -p 80:80 -p 6800:6800 wahyd4/aria2-ui
+  docker run -d --name aria2-ui-pi -p 80:80 -p 6800:6800 huangzulin/aria2-ui-pi
 ```
 
 * Aria2: <http://yourip>
@@ -46,7 +46,7 @@ File Manager
 * 请使用 admin/admin 进行登录
 ### 开启所有功能
 ```shell
-  docker run -d --name ariang -p 80:80 -p 6800:6800 -p 443:443 -e ENABLE_AUTH=true -e RPC_SECRET=Hello -e DOMAIN=example.com -e ARIA2_USER=user -e ARIA2_PWD=pwd -v /yourdata:/data -v /yoursslkeys/:/root/conf/key -v <to your aria2.conf>:/root/conf/aria2.conf wahyd4/aria2-ui
+  docker run -d --name ariang -p 80:80 -p 6800:6800 -p 443:443 -e ENABLE_AUTH=true -e RPC_SECRET=Hello -e DOMAIN=example.com -e ARIA2_USER=user -e ARIA2_PWD=pwd -v /yourdata:/data -v /yoursslkeys/:/root/conf/key -v <to your aria2.conf>:/root/conf/aria2.conf huangzulin/aria2-ui-pi
 ```
 
 ### 支持的 Docker 环境变量
@@ -67,13 +67,9 @@ File Manager
 
 ```
 cd caddy
-docker build -t aria2-ui .
+docker build -t aria2-ui-pi .
 ```
 
 ## Docker Hub
 
-  <https://hub.docker.com/r/wahyd4/aria2-ui/>
-
-## 使用 Docker compose 来运行
-
-  请参考 <https://github.com/wahyd4/aria2-ariang-x-docker-compose>
+  <https://hub.docker.com/r/huangzulin/aria2-ui-pi/>

@@ -1,6 +1,6 @@
-FROM alpine:edge
+FROM easypi/alpine-arm
 
-LABEL AUTHOR=Junv<wahyd4@gmail.com>
+LABEL AUTHOR=黄祖林<335882264@qq.com>
 
 WORKDIR /root
 
