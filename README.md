@@ -21,7 +21,7 @@ Aria2 + AriaNg
 
 <!-- /TOC -->
 Aria2
-![Screenshot](https://github.com/huangzulin/aria2-ariang-x-docker-compose/raw/master/images/ariang.png)
+![Screenshot](https://github.com/wahyd4/aria2-ariang-x-docker-compose/raw/master/images/ariang.png)
 
 File Manager
 ![Filemanager](https://github.com/huangzulin/aria2-ariang-docker-pi/raw/master/filemanager.png)
