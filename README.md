@@ -38,7 +38,7 @@ File Manager
 ### 快速运行
 
 ```shell
-  docker run -d --name aria2-ui-pi -p 80:80 -p 6800:6800 huangzulin/aria2-ui-pi
+  docker run -d --name aria2-ui-pi -p 80:80 -p 6800:6800 -/data:/data huangzulin/aria2-ui-pi
 ```
 
 * Aria2: <http://yourip>
