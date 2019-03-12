@@ -1,7 +1,5 @@
 Aria2 + AriaNg
 
-[English](https://github.com/huangzulin/aria2-ariang-docker-pi/blob/master/README.EN.md) | 简体中文
-
 [![](https://images.microbadger.com/badges/image/huangzulin/aria2-ui-pi.svg)](https://microbadger.com/images/huangzulin/aria2-ui-pi "Get your own image badge on microbadger.com")
 [![Docker Pulls](https://img.shields.io/docker/pulls/huangzulin/aria2-ui-pi.svg)](https://hub.docker.com/r/huangzulin/aria2-ui-pi/)
 
@@ -24,14 +22,14 @@ Aria2
 ![Screenshot](https://github.com/wahyd4/aria2-ariang-x-docker-compose/raw/master/images/ariang.png)
 
 File Manager
-![Filemanager](https://github.com/huangzulin/aria2-ariang-docker-pi/raw/master/filemanager.png)
+![filebrowser](https://github.com/huangzulin/aria2-ariang-docker-pi/raw/master/filebrowser.png)
 ## 功能特性
 
   * Aria2 (SSL 支持)
   * AriaNg 通过 UI 来操作，下载文件
   * 自动 HTTPS （Let's Encrypt）
   * Basic Auth 用户认证
-  * 文件管理和视频播放 ([File Manager](https://henriquedias.com/filemanager/)，注意默认情况下，只能访问和管理 `/data` 目录下的文件)
+  * 文件管理和视频播放 ([File Manager](https://henriquedias.com/filebrowser/)，注意默认情况下，只能访问和管理 `/data` 目录下的文件)
 
 ## 安装于运行
 

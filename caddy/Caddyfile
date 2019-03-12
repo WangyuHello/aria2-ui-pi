@@ -9,7 +9,7 @@
 }
 
 {$DOMAIN}/files {
-  filemanager / /data
+  filebrowser / /data
 }
 
 

@@ -1,4 +1,4 @@
-FROM easypi/alpine-arm
+FROM arm32v7/alpine
 
 LABEL AUTHOR=黄祖林<335882264@qq.com>
 
@@ -15,7 +15,7 @@ ENV ARIA2_PWD=password
 
 RUN apk update && apk add wget bash curl openrc gnupg screen aria2 tar --no-cache
 
-RUN curl https://getcaddy.com | bash -s personal http.filemanager
+RUN curl https://getcaddy.com | bash -s personal http.filebrowser
 
 ADD conf /root/conf
 COPY aria2c.sh /root
@@ -27,7 +27,7 @@ RUN mkdir -p /usr/local/www && mkdir -p /usr/local/www/aria2
 #AriaNg
 RUN mkdir /usr/local/www/aria2/Download && cd /usr/local/www/aria2 \
  && chmod +rw /root/conf/aria2.session \
- && wget -N --no-check-certificate https://github.com/mayswind/AriaNg/releases/download/0.4.0/aria-ng-0.4.0.zip && unzip aria-ng-0.4.0.zip && rm -rf aria-ng-0.4.0.zip \
+ && wget -N --no-check-certificate https://github.com/mayswind/AriaNg/releases/download/1.0.1/AriaNg-1.0.1-AllInOne.zip && unzip AriaNg-1.0.1-AllInOne.zip && rm -rf AriaNg-1.0.1-AllInOne.zip \
  && chmod -R 755 /usr/local/www/aria2 \
  && chmod +x /root/aria2c.sh
 
