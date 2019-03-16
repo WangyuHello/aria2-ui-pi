@@ -5,24 +5,6 @@ Aria2 + AriaNg
 
 本镜像包含 Aria2、AriaNg 和File Manager，主要方便那些用户期望只运行一个镜像就能实现图形化下载文件和在线播放文件。（类似离线下载的功能），只使用一个 Docker 镜像也方便用户在群晖NAS 中运行本程序。
 
-<!-- TOC -->
-
-- [功能特性](#功能特性)
-- [安装于运行](#安装于运行)
-  - [快速运行](#快速运行)
-  - [开启所有功能](#开启所有功能)
-  - [支持的 Docker 环境变量](#支持的-docker-环境变量)
-  - [支持的 Docker volume 属性](#支持的-docker-volume-属性)
-- [自行构建镜像](#自行构建镜像)
-- [Docker Hub](#docker-hub)
-- [使用 Docker compose 来运行](#使用-docker-compose-来运行)
-
-<!-- /TOC -->
-Aria2
-![Screenshot](https://github.com/wahyd4/aria2-ariang-x-docker-compose/raw/master/images/ariang.png)
-
-File Manager
-![filebrowser](https://github.com/huangzulin/aria2-ariang-docker-pi/raw/master/filebrowser.png)
 ## 功能特性
 
   * Aria2 (SSL 支持)
@@ -65,7 +47,7 @@ File Manager
 
 ```
 cd caddy
-docker build -t aria2-ui-pi .
+docker build -t huangzulin/aria2-ui-pi .
 ```
 
 ## Docker Hub
