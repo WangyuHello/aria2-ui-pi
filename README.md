@@ -46,7 +46,6 @@ Aria2 + AriaNg
 ## 自行构建镜像
 
 ```
-cd caddy
 docker build -t huangzulin/aria2-ui-pi .
 ```
 

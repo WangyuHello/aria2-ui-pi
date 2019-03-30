@@ -9,7 +9,9 @@
 }
 
 {$DOMAIN}/files {
-  filebrowser / /data
+  filebrowser / /data {
+    database /root/filebrowser.db
+  }
 }
 
 
