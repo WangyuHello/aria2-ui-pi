@@ -21,8 +21,8 @@ Aria2 + AriaNg
   docker run -d --name aria2-ui-pi -p 80:80 -p 6800:6800 -v /data:/data --restart=always huangzulin/aria2-ui-pi
 ```
 
-* Aria2: <http://yourip>
-* FileManger: <http://yourip/files>
+* Aria2: <http://yourip/ui>
+* FileManger: <http://yourip>
 * 请使用 admin/admin 进行登录
 ### 开启所有功能
 ```shell
